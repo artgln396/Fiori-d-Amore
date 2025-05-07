@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }  
+  body, html {
+    font-family: 'Georgia', serif;
+  }
+  .page{
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+}
+
+  #page1 {
+    height: 100vh;
+    background-image: url('elegant.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  #page2 #page3{
+    background-color: #e8e7e5;
+  }
+
+  nav {
+    height: 2px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    border-bottom: 1px solid #ddd;
+  }
+
+  .logo {
+    font-size: 28.8px;
+    font-weight: bold;
+    color: #33150c;
+    font-family: 'Georgia', serif;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex: 1;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #33150c;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .nav-links a:hover::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 2px;
+    background-color: maroon;
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%);
+  }
+
+  .icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .icons img {
+    color: #33150c;
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+  }
+
+  .icons a {
+    font-size: 1.5rem;
+    color: #33150c;
+    text-decoration: none;
+  }
+
+  .icons span {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    color: white;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 61px;
+    margin-top: 10px;
+    margin-right: 2px;
+  }
+
+  .row{
+    display: flex;
+}
+
+.col-1 img{
+  margin-left: 55px;
+  margin-top: 150px;
+  width: 550px;
+}
+
+/* PRODUCTS TO HA */
+.sec {
+  padding: 10% 5%;
+}
+
+.products{
+  font-size: 20px;
+  font-family: 'Georgia', serif;
+  color: #33150c;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding: 10px;
+}
+
+.products .price{
+  color: green;
+}
+
+.products img {
+  width: 250px;
+  border-radius: 5px;
+}
+
+.info {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.btn {
+  font-family: 'Georgia', serif;
+  position: absolute;
+  margin-left: 137px;
+  padding: 6px 12px;
+  background-color: #33150c;
+  color: white;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+/* CONTACTS TO HA */
+#page4 {
+  height: 100vh;
+  background-image: url('bgcontact1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.contact-section {
+  margin-top: 90px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-box {
+  display: flex;
+  background: #fff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.contact-info {
+  background-color: #33150c;
+  color: #fff;
+  padding: 30px;
+  width: 35%;
+}
+
+.contact-info h2 {
+  margin-bottom: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.info-item i {
+  margin-top: 2px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.contact-form {
+  padding: 30px;
+  width: 65%;
+}
+
+.contact-form h2 {
+  margin-bottom: 25px;
+  color: #33150c;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row.full {
+  flex-direction: column;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #cbd5e1;
+  font-size: 14px;
+  background: transparent;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+button {
+  border-radius: 20px;
+  width: 120px;
+  padding: 10px;
+  background-color: #33150c;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #33150c;
+}
+
+

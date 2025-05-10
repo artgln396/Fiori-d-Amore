@@ -24,6 +24,10 @@
     background-repeat: no-repeat;
     position: relative;
   }
+
+#page3{
+    height: 180vh;    
+}
   #page2 #page3{
     background-color: #e8e7e5;
   }
@@ -123,6 +127,9 @@
 /* PRODUCTS TO HA */
 .sec {
   padding: 10% 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 .products{

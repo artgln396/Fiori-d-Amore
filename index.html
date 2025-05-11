@@ -9,8 +9,8 @@
 </head>
 <body>  
   <nav>
-    <div class="logo">
-      Fiori d'Amore
+    <div class="logo"><a href="#page1"> Fiori d'Amore</a>
+     
     </div>
     <div class="nav-links">
       <a href="#page1">HOME</a>
@@ -25,6 +25,24 @@
       <span class="counter">0</span>
     </div>
   </nav>
+
+  <!-- Cart Tab -->
+  <div class="cart-tab" id="cartTab">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button class="close-cart" id="closeCart"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <!-- Cart items will be added here dynamically -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cartTotal">₱0.00</span>
+      </div>
+      <button class="checkout-btn">Checkout</button>
+    </div>
+  </div>
   
   <section id="page1" class="page">
   <div class="main-page">
@@ -39,7 +57,12 @@
   </section> 
 
   <section id="page2" class="page">
-
+  <div class="aboutBox">
+    <div class="aboutUs">
+      <h2>ABOUT US</h2>
+      <p>At Fiori d' Amore, we bring your floral dreams to life. Since 2025,<br> our passion for fresh blooms and beautiful arrangements has delighted customers in our community and beyond.</br></p>
+    </div>
+  </div>
   </section>
 
   <section id="page3" class="page">
@@ -160,6 +183,9 @@
     </div>
   </section>
   </section>
+<section>
+  <div class="endBox"></div>
+</section>
 
   <script src="script.js"></script>
 </body>

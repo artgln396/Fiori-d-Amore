@@ -23,10 +23,14 @@
     background-repeat: no-repeat;
     position: relative;
   }
+  #page2{
+    height: 90vh;
+  }
   #page3{
     height: 180vh;
   }
-  #page2 #page3{
+
+#page2 #page3{
     background-color: #e8e7e5;
   }
   nav {
@@ -161,21 +165,64 @@
 #page2{
   padding: 0%;
 }
-
-.aboutBox {
-  background-color: #33150c;
-  width: 100%;
-  height: 30%;
-  overflow: hidden; 
+.about-section {
+  padding: 120px 5% 4rem;
+  background-color: #f8f9fa;
 }
 
-.aboutUs{
-  color: white;
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-header {
   margin-top: 50px;
-  text-align: center;
+  text-align: start;
+  margin-bottom: 32px;
 }
-.aboutUs h2{   
-  margin-bottom: 25px;
+
+.about-header h1 {
+  color: #33150c;
+  font-size: 32px;
+}
+
+.about-header p{
+  color: #33150c;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+  margin-top: 50px;
+}
+
+.about-card {
+  background: #33150c;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.about-card h3 {
+  color: white;
+  margin-bottom: 16px;
+}
+.about-card p{
+  color: white;
+}
+
+.about-choose h1 {
+  color: #33150c;
+  font-size: 32px;
+}
+
+.about-choose p{
+  color: #33150c;
+  margin-top: 20px;
+  font-size: 16px;
 }
 
 /* CONTACTS TO HA */
@@ -277,13 +324,12 @@ button:hover {
 }
 
 
-.endBox{
+.footer{
   width: 100%;
   height: 180px;
 }
-/* RESPONSIVE BEYBE */
 
-/* Cart Tab Styles */
+/* CART TAB TO BOY*/
 .cart-tab {
   position: fixed;
   top: 0;
@@ -411,7 +457,6 @@ button:hover {
   background: #4a1f12;
 }
 
-/* Overlay when cart is open */
 .cart-overlay {
   position: fixed;
   top: 0;
